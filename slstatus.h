@@ -31,9 +31,6 @@ const char *ipv6(const char *interface);
 /* kernel_release */
 const char *kernel_release(void);
 
-/* keyboard_indicators */
-const char *keyboard_indicators(void);
-
 /* keymap */
 const char *keymap(void);
 
@@ -56,12 +53,6 @@ const char *ram_used(void);
 /* run_command */
 const char *run_command(const char *cmd);
 
-/* swap */
-const char *swap_free(void);
-const char *swap_perc(void);
-const char *swap_total(void);
-const char *swap_used(void);
-
 /* temperature */
 const char *temp(const char *);
 
@@ -74,7 +65,8 @@ const char *username(void);
 const char *uid(void);
 
 /* volume */
-const char *vol_perc(const char *card);
+const char *alsa_volume_perc(void);
+const char *alsa_volume_status(void);
 
 /* wifi */
 const char *wifi_perc(const char *interface);
